@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBackToService"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make your Booking"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeading"
+        android:layout_above="@id/footer"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Booking Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/vehicle_list" />
+
+            <!-- Booking Start and Finish Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick booking start and finish date"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Date"
+                android:focusable="false"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/etEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End Date"
+                android:focusable="false"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Additional Services -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Additional services"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <Switch
+                android:id="@+id/switchWiFi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In-Car Wi-Fi"
+                android:layout_marginBottom="10dp" />
+
+            <Switch
+                android:id="@+id/switchSnacks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Snacks"
+                android:layout_marginBottom="10dp" />
+
+            <Switch
+                android:id="@+id/switchChildSeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Child Car Seat"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnProceedPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed to payment"
+                android:backgroundTint="@color/button_color"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#1A1A1A"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get In Touch\nEmail: reception@mnandi.co.za\nCell: +27 21 455 82 30"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvCopyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="© 2024 Mnandi Luxury Transportation. All Rights Reserved | Developed by Mpoyi"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+

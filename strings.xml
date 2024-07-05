@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MnandiApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Vehicle list array -->
+    <string-array name="vehicle_list">
+        <item>Mercedes Benz C-Class</item>
+        <item>Mercedes M-Class SUV</item>
+        <item>Mercedes V-Class V (8 Seaters)</item>
+        <item>BMW i4 M50</item>
+    </string-array>
+</resources>
+

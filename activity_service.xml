@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvServiceHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Services Offered"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/tvServiceHeading"
+        android:layout_above="@id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/airport"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvAirportDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seamless airport transfers with top-tier vehicles and professional chauffeurs to ensure a comfortable journey from the moment you land."
+                android:layout_marginBottom="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/corporate"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvCorporateDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Professional and reliable transportation solutions for corporate clients, ensuring punctuality and comfort for all business-related travel."
+                android:layout_marginBottom="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/city"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvCityDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore Cape Town's top attractions with our bespoke city tours, offering an unforgettable experience in the comfort of a luxury vehicle."
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking"
+                android:layout_marginTop="20dp"
+                android:background="@color/button_color"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#1A1A1A"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get In Touch\nEmail: reception@mnandi.co.za\nCell: +27 21 455 82 30"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvCopyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="© 2024 Mnandi Luxury Transportation. All Rights Reserved | Developed by Mpoyi"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</RelativeLayout>
